@@ -1,0 +1,35 @@
+.footer{
+  display: flex;
+  background-color:var(--kBlack) ;
+  color: rgb(214, 219, 224);
+
+   /* width: 100%; */
+  /* min-width: 390px; */
+  }
+  .footer div{
+  margin: 5px 20px 10px 20px;
+  padding: 5px;
+  }
+  .footer h3{
+    font-weight: 600;
+    text-align: center;
+  }
+
+  /* 540 */
+  /* @media only screen and (max-width: 826px) {
+    .footer{
+      display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+   }
+   */
+
+   @media only screen and (max-width: 826px) {
+    .footer {
+      display: block; /* Change to block to make it stack vertically */
+      text-align: center;
+      width: auto;
+    }
+
+  }

@@ -1,0 +1,111 @@
+<div class="navContainer">
+  <div class="mob"*ngIf="isMobile">
+    <div class="togglebar">
+<mat-drawer-container class="example-container" autosize>  <mat-drawer #drawer class="example-sidenav" mode="side">
+
+    <div class="mobileNavOptions">
+      <div class="logo" id="navlogo">
+        <img src="../../../assets/logoWhite.png" alt="">
+      </div>
+
+      <div (click)="routeToSearch()">
+        <span class="material-symbols-outlined">
+          search
+          </span>
+          <span class="icontext">Search</span>
+      </div>
+      <div>
+        <span class="material-symbols-outlined">
+          sell
+        </span>
+        <span class="icontext">Offer</span>
+        <small class="new">NEW</small>
+      </div>
+      <div>
+        <span class="material-symbols-outlined">
+          record_voice_over
+          </span>
+          <span class="icontext">Bargain</span>
+      </div>
+      <div>
+        <span class="material-symbols-outlined">
+          person
+          </span>
+          <span class="icontext">Sign in</span>
+      </div>
+      <div>
+        <span class="material-symbols-outlined">
+          shopping_bag
+          </span>
+          <span class="icontext">Bag</span>
+      </div>
+    </div>
+</mat-drawer>
+  <div class="example-sidenav-content">
+    <span class="material-symbols-outlined" mat-button (click)="drawer.toggle()">
+      menu
+      </span>
+  </div>
+</mat-drawer-container>
+  </div> </div>
+  <div class="loction">
+    <div class="logo">
+      <img src="../../../assets/logo.png" alt="">
+    </div>
+<div class="address" *ngIf="!isMobile">
+  <small>{{'lakshmi nagar,Velachery,Chennai,600042'}}</small>
+</div>
+  </div>
+  <div class="navOptionContainer">
+
+<div *ngIf="isMobile" class="mobileNavicons">
+  <div (click)="routeToSearch()">
+    <span class="material-symbols-outlined">
+      search
+      </span>
+  </div>
+  <div>
+    <span class="material-symbols-outlined">
+      record_voice_over
+      </span>
+  </div>
+  <div>
+    <span class="material-symbols-outlined">
+      shopping_bag
+      </span>
+  </div>
+</div>
+  <div class="navOptions" *ngIf="!isMobile">
+    <div (click)="routeToSearch()">
+      <span class="material-symbols-outlined">
+        search
+        </span>
+        <span class="icontext" *ngIf="!isMobile">Search</span>
+    </div>
+    <div>
+      <span class="material-symbols-outlined">
+        sell
+      </span>
+      <span class="icontext" *ngIf="!isMobile">Offer</span>
+      <small class="new" *ngIf="!isMobile">NEW</small>
+    </div>
+    <div>
+      <span class="material-symbols-outlined">
+        record_voice_over
+        </span>
+        <span class="icontext" *ngIf="!isMobile">Bargain</span>
+    </div>
+    <div>
+      <span class="material-symbols-outlined">
+        person
+        </span>
+        <span class="icontext" *ngIf="!isMobile">Sign in</span>
+    </div>
+    <div>
+      <span class="material-symbols-outlined">
+        shopping_bag
+        </span>
+        <span class="icontext" *ngIf="!isMobile">Bag</span>
+    </div>
+  </div>  </div>
+</div>

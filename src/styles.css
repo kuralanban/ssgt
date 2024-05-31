@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+  --kGreen:#00b300;
+  --kgold: rgba(255, 217, 0, 0.743);
+  --kGrey:#e2e5e29c;
+  --kBlack:rgb(2, 6, 12);
+  /* --kGrey:#eaebea; */
+
+}
+
+*{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  /* overflow: hidden; */
+}
+@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";

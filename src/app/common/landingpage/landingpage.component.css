@@ -1,0 +1,172 @@
+.landingPage{
+  overflow: hidden;
+
+}
+
+.landingPage,.landingNav{
+  display: flex;
+  flex-direction: column;
+}
+.navTop,.navOptions{
+display: flex;
+}
+.navTop{
+  color: aliceblue;
+}
+.logo{
+  width: 70%;
+}
+.logo img{
+  position: absolute;
+}
+.otherNavOptions {
+margin: 5px;
+}
+.otherNavOptions span {
+  margin: 10px;
+  position: relative;
+  top: 5px;
+  cursor: pointer;
+  }
+.landingNav{
+  background-color:rgb(57, 56, 56) ;
+  height: 40px;
+  width: auto;
+}
+.navBottom{
+  margin-top: 11.5px;
+  z-index: 1;
+}
+.navBottom,.sec{
+  display: flex;
+  justify-content: center;
+}
+.navOptions div{
+margin: 7px;
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+cursor: pointer;
+}
+.navBottomDiv{
+  text-align: center;
+  background-color: var(--kGrey);
+  width: 500px;
+  border-radius: 0px 0px 25px 25px;
+}
+.search input{
+border-radius: 10px;
+border: 1px solid;
+ }
+ .search input:focus{
+  outline: none;
+  border: 1px solid;
+ }
+ .search{
+  display: block;
+ }
+ .mobileLogo img{
+   height: 150px;
+   /* margin: 1px 1px  65px ; */
+   /* margin-left: 280px; */
+  position: relative;
+  bottom: 15px;
+  }
+  .mobileLogo {
+  /* position: relative;
+  left: 230px;
+  top: -20px; */
+  /* bottom: 951px; */
+ }
+ .otherNavOptionsMobile{
+  width: 100%;
+  display: flex;
+  flex: end;
+  position: relative;
+  top: 8px;
+  right: 20px;
+ }
+ .otherNavOptionsMobile span{
+  margin: 3px 10px;
+
+ }
+ .otherNavOptionsMobile span:hover{
+background-color: var(--kGrey);
+border-radius: 50%;
+height: 25px;
+padding: 5px;
+ }
+.otherNavOptionsMobile input{
+  height: 20px;
+  border-radius: 10px;
+border: 1px solid;
+}
+.title{
+  font-size:xx-large;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+}
+.mainBaaner img{
+  width: 100%;
+}
+.mobileLogo,.otherNavOptionsMobile{
+width: 400px;
+
+}
+/* @media only screen and (max-width: 746px) {
+ .mobileLogo img{
+
+  }
+}
+@media only screen and (max-width: 624px) {
+  .mobileLogo img{
+
+   }
+ }
+ @media only screen and (max-width: 667px) {
+  .landingPage{
+    overflow: hidden;
+  }
+  .mobileLogo img{
+
+   }
+ }
+ @media only screen and (max-width: 532px) {
+  .landingPage{
+    overflow: hidden;
+  }
+
+  .mobileLogo img{
+
+   } */
+   .mobileLogo, .otherNavOptionsMobile {
+    /* Add other common styles here */
+
+    /* Set initial width for larger screens */
+    width: 400px; /* Adjust this value as needed */
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 767px) {
+    .mobileLogo, .otherNavOptionsMobile {
+        width: 350px; /* Adjust this value for smaller screens */
+    }
+}
+
+/* Media query for screens smaller than 480px */
+@media (max-width: 479px) {
+    .mobileLogo, .otherNavOptionsMobile {
+        width: 200px; /* Adjust this value for even smaller screens */
+    }
+}
+
+@media (max-width: 379px) {
+  .mobileLogo {
+      display: none; /* Adjust this value for even smaller screens */
+  }
+  .otherNavOptionsMobile{
+margin-left: 150px;
+  }
+}

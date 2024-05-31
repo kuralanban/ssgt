@@ -1,0 +1,141 @@
+
+.offers,.topSellers{
+  border-bottom: 2px  solid var(--kGrey);
+}
+
+.offerContainer,.topSellers,.catogry{
+  display: flex;
+  justify-content: center;
+  /* overflow-x: scroll; */
+}
+.titleContainer{
+  display: flex;
+  justify-content: center;
+}
+.titleContainer h2{
+font-weight: 600;
+}
+.offers{
+  width: 1200px;
+  display: flex;
+  overflow-x: scroll;
+}
+.offers div{
+  /* margin: 5px 40px; */
+  margin: 5px ;
+}
+.offers img{
+  height: 200px;
+
+}
+.products{
+  overflow: scroll;
+}
+.offers::-webkit-scrollbar,.catogryContainer::-webkit-scrollbar,.products::-webkit-scrollbar{
+  display: none;
+}
+.catogryContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: scroll;
+}
+
+.catogry,.catogoryTitles {
+  padding-bottom: 20px;
+  border-bottom: 2px solid var(--kGrey);
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+.oversized div,.tshirt div,.tanktop div,.catogoryTitles div,.hoodedSandos div{
+  margin: 5px 20px;
+  /* background-color:var(--kGrey); */
+  display: flex;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.catogry img{
+  width: 220px;
+  height: 200px;
+
+}
+.scrolloptions{
+  display: flex;
+  justify-content: end;
+  margin-right: 200px;
+  margin-bottom: 5px;
+}
+.scrolloptions span{
+  border-radius: 50%;
+  background-color: var(--kGrey);
+  margin: 5px;
+  cursor: pointer;
+  padding: 5px;
+}
+.wishContainer{
+  color: whitesmoke;
+  background-color: var(--kGrey);
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  cursor: pointer;
+  position: relative;
+  left: 220px;
+  top: 40px;
+}
+.wishContainer span{
+  position: relative;
+  top: 3px;
+}
+.products{
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+}
+.box{
+  margin: 1px 5px;
+  cursor: pointer;
+}
+.box img{
+  border-radius: 10px;
+  height: 350px;
+}
+.box div{
+  margin: 5px;
+}
+#pname{
+  font-weight: 910;
+  color: rgb(64, 66, 66);
+  border-bottom: 2px  solid var(--kGrey);
+  padding-bottom: 5px;
+}
+.catogory {
+  margin-top: 10px ;
+  padding-left: 20px;
+}
+@media only screen and (max-width: 653px) {
+.offerContainer{
+margin: 1px;
+}
+.offers img{
+  height: 150px;
+
+}
+.catogry{
+  padding-left: 40px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  overflow-x: scroll;
+}
+.navContainer{
+  width: 100%;
+}
+}
+@media only screen and (max-width: 826px) {
+  .filters {
+   background-color: antiquewhite;
+
+  }
+
+}

@@ -1,0 +1,59 @@
+<div class="landingPage">
+  <div class="landingNav">
+    <div class="navTop">
+      <div class="menu" *ngIf="isMobile">
+        <span class="material-symbols-outlined">
+          menu
+          </span>
+      </div>
+      <div class="logo" *ngIf="!isMobile">
+        <img src="../../assets/logo.png" alt="" height="150px">
+      </div>
+      <div class="mobileLogo" *ngIf="isMobile">
+        <img src="../../assets/logo.png" alt="">
+      </div>
+      <div class="otherNavOptions"  *ngIf="!isMobile">
+        <span>Track order</span>
+        <span>Contact Us</span>
+        <span>Download App</span>
+      </div>
+      <div class="otherNavOptionsMobile" *ngIf="isMobile">
+        <!-- <input type="text"> -->
+        <span class="material-symbols-outlined">
+           search
+           </span>
+           <span class="material-symbols-outlined">
+            person
+            </span>
+            <span class="material-symbols-outlined">
+              shopping_bag
+              </span>
+
+      </div>
+    </div>
+    <div class="navBottom" *ngIf="!isMobile">
+    <div class="navBottomDiv">
+  <div class="navOptions">
+    <div class="search">
+      <input type="text">
+   <span class="material-symbols-outlined">
+      search
+      </span>
+    </div>
+    <div><span>Account</span></div>
+    <div><span>Wishlist</span></div>
+    <div><span>Bag</span></div>
+  </div>
+    </div>
+    </div>
+
+  </div>
+  <div class="mainBaaner">
+    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/home-landing-web/Homepage_Banners_1920x655.jpg?format=webp&w=1500&dpr=2.0" alt="" width="1505px" *ngIf="!isMobile">
+    <img src="https://prod-img.thesouledstore.com/public/theSoul/storage/mobile-cms-media-prod/home-landing-web/Homepage_Banners_1920x655.jpg?format=webp&w=1500&dpr=2.0" alt="" *ngIf="isMobile">
+  </div>
+  <div class="happyCustomer">
+  <h2 class="title">Over 10 Thousand happy Customers </h2>
+  </div>
+  </div>
+
